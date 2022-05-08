@@ -1,3 +1,67 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    background-color: royalblue;
+    width: 80%;
+    margin: 10px auto;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+}
+
+.container h1{
+    color: white;
+    font-size: 60px;
+    margin: 10px auto 30px auto;
+    text-decoration: underline;
+}
+
+.container h2{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.container .btn{
+    padding: 20px 60px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 40px;
+    font-size: 22px;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    color: white;
+    transition: all .3s ease-in-out;
+    
+}
+
+.container .btn:hover{
+    background-color: white;
+    color: royalblue;
+}
+
+.container .btn:active{
+    border: 2px solid red;
+    color: red;
+}
+
+.container #message__holder{
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: white;
 }
